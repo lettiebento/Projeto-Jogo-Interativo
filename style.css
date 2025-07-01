@@ -17,12 +17,21 @@ button {
   font-size: 16px;
   cursor: pointer;
   border: none;
-  background-color: #fa7f72;
+  background-color: #000000; /* preto */
   color: white;
   border-radius: 8px;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: pink;
+  background-color: #00cc00; /* verde */
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #333;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
