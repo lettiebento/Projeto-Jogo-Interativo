@@ -52,21 +52,21 @@ function jogoMedia() {
 }
 
 function somaNumeros() {
-    let entrada = prompt("Digite os números que deseja somar (separados por vírgula). Use ponto (.) para números decimais:");
+    let entrada = prompt("Digite os números inteiros que deseja somar (separados por '+'):");
 
     if (!entrada) {
         alert("Entrada vazia.");
         return;
     }
 
-    let vetSoma = entrada.split(",");
+    let numeros = entrada.split("+");
     let soma = 0;
 
-    for (let i = 0; i < vetSoma.length; i++) {
-        let num = parseFloat(vetSoma[i]);
+    for (let i = 0; i < numeros.length; i++) {
+        let num = parseInt(numeros[i]);
 
         if (isNaN(num)) {
-            alert(`Valor inválido detectado: "${vetSoma[i]}"`);
+            alert(`Valor inválido detectado: "${numeros[i]}". Digite apenas números inteiros.`);
             return;
         }
 
