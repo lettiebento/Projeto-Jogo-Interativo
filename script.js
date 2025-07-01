@@ -59,6 +59,11 @@ function somaNumeros() {
         return;
     }
 
+    if (entrada.includes(",") || entrada.includes(".")) {
+        alert("Use apenas números inteiros separados por '+'. Não use vírgula ou ponto.");
+        return;
+    }
+
     let numeros = entrada.split("+");
     let soma = 0;
 
